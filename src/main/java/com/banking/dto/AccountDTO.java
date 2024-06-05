@@ -1,4 +1,4 @@
-package com.banking.entity.dto;
+package com.banking.dto;
 
 import jakarta.persistence.Column;
 import lombok.Data;
