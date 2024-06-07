@@ -1,6 +1,6 @@
 package com.banking.dto;
 
-import jakarta.persistence.Column;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
@@ -10,5 +10,21 @@ public class AccountDTO {
 private String accountHolderName;
 private double balance;
 private Long accountHolderPhoneNo;
-private long accountHolderPinCode;
+private Long accountHolderPinCode;
+
+public AccountDTO(long id, String accountHolderName, double balance,
+		long accountHolderPhoneNo, long accountHolderPinCode) {
+	super();
+	this.id = id;
+	this.accountHolderName = accountHolderName;
+	this.balance = balance;
+	this.accountHolderPhoneNo = accountHolderPhoneNo;
+	this.accountHolderPinCode = accountHolderPinCode;
+}
+
+
+
+
+
+
 }
