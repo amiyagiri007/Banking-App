@@ -4,5 +4,5 @@ import com.banking.dto.AccountDTO;
 
 public interface AccountService {
 
-	AccountDTO createAccountDTO(AccountDTO accountDTO);
+	AccountDTO createAccount(AccountDTO accountDTO);
 }
