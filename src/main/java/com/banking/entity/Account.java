@@ -10,8 +10,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-
+  
+@Setter
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "accounts")
@@ -25,55 +26,6 @@ private String accountHolderName;
 private double balance;
 private Long accountHolderPhoneNo;
 private long accountHolderPinCode;
-
-
-
-
-
-public Account(Long id, String accountHolderName, double balance,
-		Long accountHolderPhoneNo, long accountHolderPinCode) {
-	super();
-	this.id = id;
-	this.accountHolderName = accountHolderName;
-	this.balance = balance;
-	this.accountHolderPhoneNo = accountHolderPhoneNo;
-	this.accountHolderPinCode = accountHolderPinCode;
-}
-
-
-public Account() {
-	System.out.println("Account constructor called");
-}
-public Long getId() {
-	return id;
-}
-public String getAccountHolderName() {
-	return accountHolderName;
-}
-public double getBalance() {
-	return balance;
-}
-public Long getAccountHolderPhoneNo() {
-	return accountHolderPhoneNo;
-}
-public long getAccountHolderPinCode() {
-	return accountHolderPinCode;
-}
-public void setId(Long id) {
-	this.id = id;
-}
-public void setAccountHolderName(String accountHolderName) {
-	this.accountHolderName = accountHolderName;
-}
-public void setBalance(double balance) {
-	this.balance = balance;
-}
-public void setAccountHolderPhoneNo(Long accountHolderPhoneNo) {
-	this.accountHolderPhoneNo = accountHolderPhoneNo;
-}
-public void setAccountHolderPinCode(long accountHolderPinCode) {
-	this.accountHolderPinCode = accountHolderPinCode;
-}
 
 
 
